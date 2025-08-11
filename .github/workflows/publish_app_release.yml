@@ -1,8 +1,8 @@
-name: app-build-action
+name: app-build-action-release
 #推送Tag时触发
 on:
+  workflow_dispatch:
   push:
-    workflow_dispatch:
     tags:
       - "v*"
 jobs:
